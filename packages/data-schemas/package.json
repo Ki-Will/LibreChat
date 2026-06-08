@@ -34,8 +34,8 @@
   ],
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && tsdown",
-    "build:watch": "tsdown --watch",
+    "build": "node init && npm run clean && tsdown",
+    "build:watch": "node init && tsdown --watch",
     "test": "jest --coverage --watch",
     "test:ci": "jest --coverage --ci",
     "verify": "npm run test:ci",

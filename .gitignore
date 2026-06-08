@@ -77,7 +77,6 @@ librechat.yml
 
 # Environment
 .npmrc
-.env*
 my.secrets
 !**/.env.example
 !**/.env.test.example
@@ -85,7 +84,6 @@ cache.json
 api/data/
 owner.yml
 archive
-.vscode/settings.json
 src/style - official.css
 /e2e/specs/.test-results/
 /e2e/.generated/
@@ -179,3 +177,7 @@ claude-flow
 hive-mind-prompt-*.txt
 CLAUDE.md
 .gsd
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+config.bat
