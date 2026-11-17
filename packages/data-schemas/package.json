@@ -34,8 +34,8 @@
   ],
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && tsdown",
-    "build:watch": "tsdown --watch",
+    "build": "node init && npm run clean && tsdown",
+    "build:watch": "node init && tsdown --watch",
     "test": "jest --coverage --watch",
     "test:ci": "jest --coverage --ci",
     "verify": "npm run test:ci",
@@ -80,7 +80,7 @@
     "librechat-data-provider": "*",
     "lodash": "^4.17.23",
     "meilisearch": "^0.38.0",
-    "mongoose": "^8.23.1",
+    "mongoose": "^8.24.10",
     "nanoid": "^3.3.7",
     "winston": "^3.17.0",
     "winston-daily-rotate-file": "^5.0.0"
